@@ -1,0 +1,21 @@
+- name: N0zz Docker Run Action
+  # You may pin to the exact commit or the version.
+  # uses: N0zz/docker-run-action@e8f19d0ee3995fc4807c5fcc95dcc6c9a4907d22
+  uses: N0zz/docker-run-action@v4
+  with:
+    # Image
+    image: docker-image.yml
+    # Options
+    options: # optional
+    # Run command in container
+    run: # optional
+    # Use a specific shell
+    shell: # optional, default is sh
+    # Registry
+    registry: # optional
+    # Username
+    username: # optional
+    # Password
+    password: # optional
+    # Docker Network ID
+    docker_network: # optional, default is ${{ job.container.network }}
